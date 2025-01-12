@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 
+let
+  pkgsUnstable = import <nixpkgs-unstable> {};
+in
+
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -51,6 +55,7 @@
     pkgs.python313
     pkgs.ripgrep
     pkgs.tmux
+    pkgsUnstable.uv
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
