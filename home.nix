@@ -40,6 +40,7 @@ in
     # '')
     pkgs.bat
     pkgs.coreutils
+    pkgs.delta
     pkgs.direnv
     pkgs.eza
     pkgs.fd
@@ -47,14 +48,32 @@ in
     pkgs.gawk
     pkgs.gh
     pkgs.git
+    pkgs.git-crypt
+    pkgs.gnupg
     pkgs.gnused
+    pkgs.htop
+    pkgs.jq
     pkgs.just
+    pkgs.lazygit
+    pkgs.luajit
+    pkgs.luarocks
+    pkgs.ncdu
     pkgs.neovim
+    pkgs.nodejs-slim
+    pkgs.openconnect
+    pkgs.pass
     pkgs.powerline
     pkgs.pwgen
     pkgs.python313
     pkgs.ripgrep
+    pkgs.sqlite
+    pkgs.stow
+    pkgs.subnetcalc
+    pkgs.tio
     pkgs.tmux
+    pkgs.tree-sitter
+    pkgs.wget
+    pkgs.xz
     pkgsUnstable.uv
   ];
 
