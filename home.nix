@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 let
   pkgsUnstable = import <nixpkgs-unstable> {};
@@ -38,6 +38,7 @@ in
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    pkgs._1password-cli
     pkgs.bat
     pkgs.coreutils
     pkgs.delta
@@ -75,6 +76,11 @@ in
     pkgs.wget
     pkgs.xz
     pkgsUnstable.uv
+  ];
+
+  # Allow installation of the 1password-cli package
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "1password-cli"
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
