@@ -6,7 +6,7 @@ in
 
 {
   # import package configurations
-  imports = [ ./tmux.nix ];
+  imports = [ ./tmux.nix ./zsh.nix ];
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
