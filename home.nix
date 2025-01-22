@@ -45,6 +45,7 @@ in
     pkgs.bat
     pkgs.coreutils
     pkgs.delta
+    pkgs.devenv
     pkgs.direnv
     pkgs.eza
     pkgs.fd
