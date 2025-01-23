@@ -43,6 +43,7 @@ in
     # '')
     pkgs._1password-cli
     pkgs.bat
+    pkgs.cargo
     pkgs.coreutils
     pkgs.delta
     pkgs.devenv
