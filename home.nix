@@ -64,7 +64,7 @@ in
     pkgs.luarocks
     pkgs.ncdu
     pkgs.neovim
-    pkgs.nodejs-slim
+    pkgs.nodejs_22
     pkgs.openconnect
     pkgs.pass
     pkgs.powerline
