@@ -3,7 +3,7 @@
 {
   programs.tmux = {
     enable = true;
-    shell = "/bin/zsh";
+    shell = "$SHELL";
     baseIndex = 1;
     keyMode = "vi";
     terminal = "tmux-256color";
@@ -79,7 +79,6 @@
 
       # ensure we open new windows with default shell
       set -gu default-command
-      set -g default-shell "$SHELL"
     '';
   };
 }
