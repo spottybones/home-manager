@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  pkgsUnstable = import <nixpkgs-unstable> {};
+  pkgsUnstable = import <nixpkgs-unstable> { };
 in
 
 {
@@ -51,6 +51,7 @@ in
     pkgs.eza
     pkgs.fd
     pkgs.findutils
+    pkgs.fzf
     pkgs.gawk
     pkgs.gh
     pkgs.git
