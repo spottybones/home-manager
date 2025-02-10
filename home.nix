@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, lib, ... }:
 
 let
   pkgsUnstable = import <nixpkgs-unstable> { };
