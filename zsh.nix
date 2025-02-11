@@ -1,5 +1,5 @@
 # my zsh configuration
-{ pkgs, ... }:
+{ ... }:
 
 {
   programs.zsh = {
@@ -20,6 +20,7 @@
         "git"
         "tmux"
         "eza"
+        "vi-mode"
         "fzf"
         "z"
       ];
@@ -33,11 +34,11 @@
       '';
     };
 
-    defaultKeymap = "emacs";
+    defaultKeymap = "viins";
 
     shellAliases = {
-        l = "ls";
-      };
+      l = "ls";
+    };
 
     envExtra = ''
       GAM_HOME="''${HOME}/.local/gam7"
